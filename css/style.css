@@ -26,7 +26,7 @@
 }
 
 .homepage-container .name-bento-block {
-  background-image: url("/images/waves-4.svg");
+  background-image: url("../images/waves-4.svg");
   background-color: var(--white);
   background-size: 100%;
   background-repeat: repeat-x;
@@ -68,7 +68,7 @@
 
 /* Projects block*/
 .homepage-container .projects-bento-block {
-  background-image: url("/images/lit-background-1.svg");
+  background-image: url("../images/lit-background-1.svg");
   background-size: 180%;
   background-position: bottom center;
   min-height: calc((100% / 4) * 2);
@@ -99,7 +99,7 @@
 
 /* Apps block */
 .homepage-container .csharp-bento-block .applications-bento-block {
-  background-image: url("/images/rain-background-1.svg");
+  background-image: url("../images/rain-background-1.svg");
   border: 2px solid var(--black);
   border-radius: 16px;
   min-height: calc(100% / 2);
@@ -185,7 +185,7 @@
 
 /* Websites block */
 .homepage-container .web-dev-bento-block .websites-bento-block {
-  background-image: url("/images/rain-background-1.svg");
+  background-image: url("../images/rain-background-1.svg");
 }
 
 /* Websites block hover */
@@ -202,7 +202,7 @@
 
 /* Databases block */
 .homepage-container .web-dev-bento-block .databases-bento-block {
-  background-image: url("/images/wavey-background-1.svg");
+  background-image: url("../images/wavey-background-1.svg");
   background-position: center;
   background-size: 100% 200%;
 }
@@ -224,7 +224,7 @@
 
 /* About block */
 .homepage-container .about-bento-block {
-  background-image: url("/images/blobs-background-1.svg");
+  background-image: url("../images/blobs-background-1.svg");
   background-size: 1000px;
   background-position: center;
 }
