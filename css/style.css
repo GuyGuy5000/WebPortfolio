@@ -42,7 +42,7 @@
 
 .homepage-container .name-bento-block .bottom-half {
   align-items: center;
-  background-image: url("/images/purple-shapes-background.svg");
+  background-image: url("../images/purple-shapes-background.svg");
   background-size: cover;
   background-position: center;
   border-radius: 0 0 15px 15px;
