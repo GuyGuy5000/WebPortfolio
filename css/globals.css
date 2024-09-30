@@ -1,0 +1,182 @@
+@import url("../fonts/calibri.ttf");
+@import url("../fonts/calibrib.ttf");
+
+:root {
+  --black: #222;
+  --gray: #808080;
+  --white: #eee;
+  --purple: #4f0483;
+  --blue: #060669;
+  --paper: #fff8eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+/** Global styles here will be automatically applied, can be overritten where used. **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  color: var(--black);
+  font-size: 1.85rem;
+  font-weight: 500;
+}
+
+h5 {
+  color: var(--black);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h6 {
+  color: var(--black);
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+label,
+p {
+  color: var(--black);
+  font-family: "Calibri", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+a {
+  color: var(--black);
+  font-family: "Calibri", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gray);
+}
+
+button {
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--gray);
+}
+
+/** Custom classes for broadly used styles. **/
+/* Nav bar */
+.nav-container {
+  align-items: center;
+  background-color: var(--black);
+  height: 80px;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.nav-container ul {
+  gap: 48px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-container ul li a {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-container ul li a:hover {
+  color: #fff;
+  font-size: 2.25rem;
+}
+
+/* flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* index bento block */
+.bento-block {
+  align-items: center;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100% / 4);
+  max-height: calc(100% / 4);
+  min-width: calc((100% - (8px * 7)) / 8);
+  max-width: calc((100% - (8px * 7)) / 8);
+}
+
+/* Media Queries */
+@media only screen and (max-width:1070px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.85rem;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+  }
+  
+  h4 {
+    font-size: 1.45rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  label,
+  p {
+    font-size: 1rem;
+  }
+}
