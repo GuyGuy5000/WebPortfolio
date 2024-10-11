@@ -1,7 +1,14 @@
 /* Home page */
+.bg {
+  background: url("../images/paper-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .homepage-container {
   align-content: flex-start;
-  gap: 8px;
+  gap: 24px !important;
   height: 670px;
   justify-content: center;
   margin: 0 auto;
@@ -13,16 +20,17 @@
 .homepage-container .bento-block h1,
 .homepage-container .bento-block h2,
 .homepage-container .bento-block h3 {
-  color: var(--white);
+  color: var(--blue);
 }
 
-/* Name block */
+/* Name block
 .homepage-container .name-bento-block,
 .homepage-container .csharp-bento-block {
+  justify-content: space-between;
   min-height: calc((100% / 4) * 2);
   max-height: calc((100% / 4) * 2);
-  min-width: calc((100% - (8px * 3)) / 8 * 2);
-  max-width: calc((100% - (8px * 3)) / 8 * 2);
+  min-width: calc((100% - (24px * 3)) / 8 * 3);
+  max-width: calc((100% - (24px * 3)) / 8 * 3);
 }
 
 .homepage-container .name-bento-block {
@@ -52,7 +60,7 @@
   width: 100%;
 }
 
-/* Name block hover */
+Name block hover
 .homepage-container .name-bento-block:hover {
   background-size: 120%;
 }
@@ -64,22 +72,17 @@
 
 .homepage-container .name-bento-block:hover .bottom-half {
   height: 35%;
-}
+} */
 
 /* Projects block*/
 .homepage-container .projects-bento-block {
-  background-image: url("../images/lit-background-1.svg");
-  background-size: 180%;
-  background-position: bottom center;
+  background-image: url("../images/wave-background.svg");
+  background-size: cover;
+  background-position: center;
   min-height: calc((100% / 4) * 2);
   max-height: calc((100% / 4) * 2);
-  min-width: calc((100% - (8px * 3)) / 8 * 4);
-  max-width: calc((100% - (8px * 3)) / 8 * 4);
-}
-
-/* Projects block hover*/
-.homepage-container .projects-bento-block:hover {
-  background-size: 160%;
+  min-width: calc((100% - (27px * 3)) / 8 * 5);
+  max-width: calc((100% - (27px * 3)) / 8 * 5);
 }
 
 .homepage-container .projects-bento-block:hover h1 {
@@ -87,20 +90,23 @@
 }
 
 .homepage-container .csharp-bento-block {
-  border: none;
+  justify-content: space-between;
+  min-height: calc((100% / 4) * 2);
+  max-height: calc((100% / 4) * 2);
+  min-width: calc((100% - 24px) / 8 * 3);
+  max-width: calc((100% - 24px) / 8 * 3);
 }
 
 .homepage-container .csharp-bento-block .bento-block {
-  min-height: calc(100% / 2 - 8px);
-  max-height: calc(100% / 2 - 8px);
-  min-width: calc(100% / 2 - 4px);
-  max-width: calc(100% / 2 - 4px);
+  min-height: calc(100% / 2 - 24px);
+  max-height: calc(100% / 2 - 24px);
+  min-width: calc(100% / 3 - 24px);
+  max-width: calc(100% / 3 - 24px);
 }
 
 /* Apps block */
 .homepage-container .csharp-bento-block .applications-bento-block {
   background-image: url("../images/rain-background-1.svg");
-  border: 2px solid var(--black);
   border-radius: 16px;
   min-height: calc(100% / 2);
   max-height: calc(100% / 2);
@@ -108,6 +114,10 @@
   max-width: 100%;
   animation: appsHover 0.6s ease-in-out;
   animation-iteration-count: 0;
+}
+
+.homepage-container .csharp-bento-block .applications-bento-block h2 {
+  background-color: #fefefe;
 }
 
 /* Apps block hover */
@@ -120,68 +130,65 @@
   background-color: var(--purple);
 }
 
-/* .NET block */
-.homepage-container .csharp-bento-block .net-bento-block {
-  background: linear-gradient(#a00493, #a00493);
-}
-
-/* .NET block hover */
-.homepage-container .csharp-bento-block .net-bento-block:hover {
-  background: linear-gradient(#a00493, #4e0348);
-}
-
-/* MVC block */
+/* .NET, UWP, MVC blocks */
+.homepage-container .csharp-bento-block .net-bento-block,
+.homepage-container .csharp-bento-block .uwp-bento-block,
 .homepage-container .csharp-bento-block .mvc-bento-block {
-  background-color: #a32abb;
+  background-color: #fefefe;
 }
 
-/* MVC block hover */
+.homepage-container .csharp-bento-block .net-bento-block h3,
+.homepage-container .csharp-bento-block .uwp-bento-block h3,
 .homepage-container .csharp-bento-block .mvc-bento-block h3 {
   transition: 0.1s all ease-in-out;
-  border-bottom: 0px solid var(--white);
+  border-bottom: 0px solid var(--blue);
 }
 
+/* .NET, UWP, MVC blocks hover */
+.homepage-container .csharp-bento-block .net-bento-block:hover h3,
+.homepage-container .csharp-bento-block .uwp-bento-block:hover h3,
 .homepage-container .csharp-bento-block .mvc-bento-block:hover h3 {
-  border-bottom: 4px solid var(--white);
+  border-bottom: 4px solid var(--blue);
 }
 
-.homepage-container .about-bento-block,
 .homepage-container .web-dev-bento-block {
   min-height: calc((100% / 4) * 2);
   max-height: calc((100% / 4) * 2);
-  min-width: calc((100% - (8px * 2)) / 8 * 4);
-  max-width: calc((100% - (8px * 2)) / 8 * 4);
+  min-width: calc((100% - (21px * 2)) / 8 * 6);
+  max-width: calc((100% - (21px * 2)) / 8 * 6);
 }
 
 .homepage-container .web-dev-bento-block {
   border: none;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 24px;
 }
 
 .homepage-container .web-dev-bento-block .bento-block {
-  min-height: calc(100% / 2 - 8px);
-  max-height: calc(100% / 2 - 8px);
-  min-width: calc(100% / 4 - 6px);
-  max-width: calc(100% / 4 - 6px);
+  min-height: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+  min-width: calc(100% / 6 - 24px);
+  max-width: calc(100% / 6 - 24px);
 }
 
 /* web and databases blocks */
 .homepage-container .web-dev-bento-block .databases-bento-block,
 .homepage-container .web-dev-bento-block .websites-bento-block {
-  min-width: calc((100% - 8px) / 4 * 3);
-  max-width: calc((100% - 8px) / 4 * 3);
+  min-height: 100%;
+  max-height: 100%;
+  min-width: calc(100% / 6 * 3 - 24px);
+  max-width: calc(100% / 6 * 3 - 24px);
 }
 
-/* HTML block */
+/* HTML block
 .homepage-container .web-dev-bento-block .html-bento-block {
-  background: linear-gradient(var(--blue) 20px, #083ea3);
+  background: linear-gradient(var(--neutral-blue) 5px, #fff);
 }
 
-/* HTML block hover */
+HTML block hover 
 .homepage-container .web-dev-bento-block .html-bento-block:hover {
-  background: linear-gradient(var(--blue) 200px, #07052b);
-}
+  background: linear-gradient(var(--gray) -1000px, #fefefe);
+} */
 
 /* Websites block */
 .homepage-container .web-dev-bento-block .websites-bento-block {
@@ -190,12 +197,13 @@
 
 /* Websites block hover */
 .homepage-container .web-dev-bento-block .websites-bento-block h2 {
-  border: 0px solid var(--white);
+  background-color: #fefefe;
+  border: 0px solid var(--blue);
   transition: all 0.1s ease;
 }
 
 .homepage-container .web-dev-bento-block .websites-bento-block:hover h2 {
-  border: 5px solid var(--white);
+  border: 5px solid var(--blue);
   padding: 5px;
   scale: 1.1;
 }
@@ -204,7 +212,7 @@
 .homepage-container .web-dev-bento-block .databases-bento-block {
   background-image: url("../images/wavey-background-1.svg");
   background-position: center;
-  background-size: 100% 200%;
+  background-size: 140% 200%;
 }
 
 /* Databases block hover */
@@ -212,26 +220,61 @@
   background-size: 160% 250%;
 }
 
-/* SQL block */
+/* SQL block
 .homepage-container .web-dev-bento-block .sql-bento-block {
-  background-color: #603cb4;
+  background-color: var(--white);
 }
 
-/* SQL block hover */
+SQL block hover
 .homepage-container .web-dev-bento-block .sql-bento-block:hover {
-  background-color: #6212a3;
-}
+  background-color: #fff;
+} */
 
 /* About block */
 .homepage-container .about-bento-block {
   background-image: url("../images/blobs-background-1.svg");
-  background-size: 1000px;
+  background-size: 780px;
   background-position: center;
+  min-height: calc((100% / 4) * 2);
+  max-height: calc((100% / 4) * 2);
+  min-width: calc((100% - (24px * 2)) / 8 * 2);
+  max-width: calc((100% - (24px * 2)) / 8 * 2);
+}
+
+.homepage-container .about-bento-block .about-name,
+.homepage-container .about-bento-block .about-me,
+.homepage-container .about-bento-block .about-title {
+  padding: 0px 6px;
+  justify-content: center;
+  width: calc(100% - 16px);
+}
+
+.homepage-container .about-bento-block .about-name {
+  justify-content: flex-start;
+}
+
+.homepage-container .about-bento-block .about-title {
+  justify-content: flex-end;
+}
+
+.homepage-container .about-bento-block .about-name h3,
+.homepage-container .about-bento-block .about-me h1,
+.homepage-container .about-bento-block .about-title h3 {
+  border-radius: 8px;
+  background-color: rgba(254, 254, 254, 0.5);
 }
 
 /* About block hover */
 .homepage-container .about-bento-block:hover {
   background-size: 3000px;
+}
+
+.homepage-container .about-bento-block:hover h1 {
+  scale: 1.1;
+}
+
+.homepage-container .about-bento-block:hover h3 {
+  scale: 0.9;
 }
 
 /* Media Queries */
@@ -241,27 +284,20 @@
     padding: 48px 12px;
   }
 
-  .homepage-container .name-bento-block h1 {
-    padding-top: 30%;
-  }
-
-  .homepage-container .name-bento-block h1:hover {
-    padding-top: 32%;
-  }
-
-  .homepage-container .projects-bento-block {
-    background-size: 180%;
-  }
-
-  .homepage-container .projects-bento-block:hover {
-    background-size: 210%;
+  .homepage-container .csharp-bento-block .net-bento-block,
+  .homepage-container .csharp-bento-block .uwp-bento-block,
+  .homepage-container .csharp-bento-block .mvc-bento-block {
+    min-height: calc(100% / 2 - 24px);
+    max-height: calc(100% / 2 - 24px);
+    min-width: calc(100% / 3 - 16px);
+    max-width: calc(100% / 3 - 16px);
   }
 }
 
 @media only screen and (max-width: 768px) {
   .homepage-container {
     align-items: center;
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     flex-wrap: nowrap !important;
     height: 600px;
     padding: 48px 8px;
@@ -273,68 +309,55 @@
     max-width: calc((100% - (8px * 3)) / 4 * 4);
   }
 
-  .homepage-container .name-bento-block,
   .homepage-container .csharp-bento-block {
     min-width: calc((100% - (8px * 3)) / 4 * 4);
     max-width: calc((100% - (8px * 3)) / 4 * 4);
   }
 
-  .homepage-container .name-bento-block {
-    min-height: calc((100% / 4) * 1);
-    max-height: calc((100% / 4) * 1);
-  }
-
-  .homepage-container .name-bento-block {
-    background-image: none;
-  }
-
-  .homepage-container .name-bento-block h1 {
-    padding-top: 15px;
-  }
-
-  .homepage-container .name-bento-block:hover h1 {
-    padding-top: 25px;
-  }
-
-  .homepage-container .projects-bento-block {
-    background-size: 120% 100%;
-  }
-
-  .homepage-container .projects-bento-block:hover {
-    background-size: 120% 130%;
-  }
-
-  .homepage-container .csharp-bento-block {
-    flex-direction: row-reverse;
-  }
-
-  .homepage-container .about-bento-block,
   .homepage-container .web-dev-bento-block {
-    min-width: calc((100% - (8px * 2)) / 4 * 4);
-    max-width: calc((100% - (8px * 2)) / 4 * 4);
+    min-width: calc(100% / 4 * 4);
+    max-width: calc(100% / 4 * 4);
+  }
+
+  .homepage-container .web-dev-bento-block .databases-bento-block {
+    background-size: 180% 180%;
+  }
+
+  .homepage-container .web-dev-bento-block .databases-bento-block:hover {
+    background-size: 200% 200%;
+  }
+
+  .homepage-container .about-bento-block {
+    min-width: calc(100% - 24px / 4 * 4);
+    max-width: calc(100% - 24px / 4 * 4);
   }
 }
 
 @media only screen and (max-width: 440px) {
-.homepage-container .web-dev-bento-block .databases-bento-block,
-.homepage-container .web-dev-bento-block .websites-bento-block {
-  min-width: calc((100% - 8px) / 5 * 3);
-  max-width: calc((100% - 8px) / 5 * 3);
-}
-.homepage-container .web-dev-bento-block .html-bento-block,
-.homepage-container .web-dev-bento-block .sql-bento-block {
-  min-width: calc((100% - 8px) / 8 * 3);
-  max-width: calc((100% - 8px) / 8 * 3);
-}
+  .homepage-container .web-dev-bento-block .databases-bento-block,
+  .homepage-container .web-dev-bento-block .websites-bento-block {
+    min-width: calc((100% - 48px) / 4 * 2);
+    max-width: calc((100% - 48px) / 4 * 2);
+  }
 
-.homepage-container .web-dev-bento-block .databases-bento-block {
-  background-size: 180% 100%;
-}
+  .homepage-container .web-dev-bento-block .databases-bento-block h2,
+  .homepage-container .web-dev-bento-block .websites-bento-block h2 {
+    font-size: 24px;
+  }
 
-.homepage-container .web-dev-bento-block .databases-bento-block:hover {
-  background-size: 280% 200%;
-}
+  /* .homepage-container .web-dev-bento-block .html-bento-block,
+  .homepage-container .web-dev-bento-block .sql-bento-block {
+    min-width: calc((100% - 8px) / 8 * 3);
+    max-width: calc((100% - 8px) / 8 * 3);
+  } */
 
+  .homepage-container .web-dev-bento-block .databases-bento-block {
+    background-size: 280% 100%;
+  }
+
+  .homepage-container .web-dev-bento-block .databases-bento-block:hover {
+    background-size: 300% 200%;
+  }
 }
 
 /* Keyframes */
