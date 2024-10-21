@@ -1,8 +1,13 @@
 /* Projects page */
+.bg {
+  background: url("../images/curved-line-bg.svg");
+  background-position: center top;
+  background-size: contain;
+}
+
 .projects-container {
   align-content: flex-start;
-  gap: 8px;
-  height: 670px;
+  gap: 32px;
   justify-content: center;
   margin: 0 auto;
   padding: 56px;
@@ -13,15 +18,14 @@
 .section-container {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 256px;
 }
 
 .section-top-container {
-  background: url("../images/blue-directional-background.svg");
   border-radius: 0px 16px 0px 0px;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 32px;
 }
 
 .section-header {
@@ -35,7 +39,7 @@
 }
 
 .section-list {
-  border-bottom: 1px solid #c2d5ff;
+  /* border-bottom: 1px solid #c2d5ff; */
   padding-bottom: 32px;
 }
 
