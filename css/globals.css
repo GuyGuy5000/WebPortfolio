@@ -99,6 +99,10 @@ button:hover {
 
 /** Custom classes for broadly used styles. **/
 /* Nav bar */
+.fa-bars {
+  display: none !important;
+}
+
 .nav-container {
   align-items: center;
   background-color: var(--black);
@@ -107,6 +111,10 @@ button:hover {
   position: sticky;
   top: 0;
   width: 100%;
+}
+
+.nav-container .fa-x {
+  display: none;
 }
 
 .nav-container ul {
@@ -181,5 +189,63 @@ button:hover {
   label,
   p {
     font-size: 1rem;
+  }
+
+  .nav-container ul li a {
+    font-size: 1.35rem;
+  }
+
+  .nav-container ul li a:hover {
+    font-size: 1.50rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .fa-bars{
+    align-items: center;
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex !important;
+    font-size: 1.4rem;
+    height: 40px;
+    justify-content: center;
+    position: sticky;
+    top: 16px;
+    left: calc(100% - 46px);
+    width: 40px;
+  }
+
+  .nav-container {
+    display: none;
+    height: auto;
+    padding: 32px;
+  }
+  
+  .nav-container .fa-x {
+    align-content: center;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+  }
+
+  .nav-container ul{
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav-container ul li a {
+    font-size: 1.75rem;
+  }
+
+  .nav-container ul li a:hover {
+    font-size: 2rem;
   }
 }

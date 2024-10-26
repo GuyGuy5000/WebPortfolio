@@ -1,8 +1,9 @@
 /* Projects page */
 .bg {
   background: url("../images/curved-line-bg.svg");
-  background-position: center top;
-  background-size: contain;
+  background-position: center -200px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .projects-container {
@@ -18,7 +19,7 @@
 .section-container {
   display: flex;
   flex-direction: column;
-  gap: 256px;
+  gap: 128px;
 }
 
 .section-top-container {
@@ -56,7 +57,7 @@
 
 .project-container {
   align-items: center;
-  border-bottom: 1px solid var(--black);
+  /* border-bottom: 1px solid var(--black); */
   flex-direction: column;
   gap: 32px !important;
   height: 70vh;
@@ -85,9 +86,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .bg {
+    background-position: center -200px;
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
   .section-header h1,
   .section-header p {
     width: 190px;
+  }
+
+  .projects-container{
+    padding: 5%;
   }
 
   .project-container {
@@ -108,7 +119,12 @@
 }
 
 @media only screen and (max-width: 440px) {
+  .project-container{
+    padding: 0px;
+  }
+
   .project-body img {
-    display: none;
+    height: 150px;
+    width: 100%;
   }
 }
