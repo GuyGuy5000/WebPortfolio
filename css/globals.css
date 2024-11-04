@@ -7,7 +7,7 @@
   --white: #eee;
   --purple: #590396;
   --blue: #0a1468;
-  --neutral-blue: #707E91;
+  --neutral-blue: #707e91;
   --paper: #fff8eb;
 }
 
@@ -99,8 +99,8 @@ button:hover {
 
 /** Custom classes for broadly used styles. **/
 /* Nav bar */
-.fa-bars {
-  display: none !important;
+.open-nav {
+  display: none;
 }
 
 .nav-container {
@@ -196,18 +196,18 @@ button:hover {
   }
 
   .nav-container ul li a:hover {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 440px) {
-  .fa-bars{
+  .open-nav {
     align-items: center;
     background-color: var(--black);
     border: 2px solid var(--white);
     border-radius: 100%;
     cursor: pointer;
-    display: flex !important;
+    display: flex;
     font-size: 1.4rem;
     height: 40px;
     justify-content: center;
@@ -222,7 +222,7 @@ button:hover {
     height: auto;
     padding: 32px;
   }
-  
+
   .nav-container .fa-x {
     align-content: center;
     border: 2px solid var(--white);
@@ -232,12 +232,12 @@ button:hover {
     height: 30px;
     justify-content: center;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 22px;
+    right: 10px;
     width: 30px;
   }
 
-  .nav-container ul{
+  .nav-container ul {
     align-items: center;
     flex-direction: column;
   }
