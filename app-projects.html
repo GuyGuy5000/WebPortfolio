@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadav Hilu - App Projects Page</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/globals.css" />
+
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/9538a7980f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg">
+    <!--Nav-->
+    <div id="navContainer" class="nav-container flex-container">
+      <i
+        id="btnCloseNav"
+        class="fa-solid fa-x flex-container"
+        style="color: white"
+      ></i>
+      <ul class="flex-container">
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="web-projects.html">My Projects</a></li>
+        <li><a>About Me</a></li>
+      </ul>
+    </div>
+    <i
+      id="btnOpenNav"
+      class="fa-solid fa-bars open-nav flex-container"
+      style="color: white"
+    ></i>
+    <!--main-->
+    <main class="projects-container">
+      <section class="section-container">
+        <div class="section-top-container">
+          <div class="section-header flex-container">
+            <h1>Applications and Software</h1>
+            <p>
+              Projects designed as stand-alone apps or software based on .NET
+              frameworks. These projects utilize cloud services such as
+              Microsoft Azure to develop layered architecture and create
+              scalable database solutions
+            </p>
+          </div>
+
+          <div class="section-list">
+            <ol>
+              <li>
+                <a href="#appOne"
+                  ><h2>WMBA</h2>
+                  <p>ASP.NET Core Web app (MVC)</p></a
+                >
+              </li>
+              <li>
+                <a href="#appTwo"
+                  ><h2>Calendarium</h2>
+                  <p>.NET Maui, ASP.NET Core Web API</p></a
+                >
+              </li>
+              <li>
+                <a href="#appThree"
+                  ><h2>Catering Management Solution</h2>
+                  <p>ASP.NET Core Web app (MVC)</p></a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="appOne" class="project-container flex-container">
+          <h3>Welland Minor Baseball League</h3>
+          <div class="project-body flex-container">
+            <img src="images/blobs-background-1.svg" />
+            <p>
+              Lorem Ipsum is simply <b>dummy text</b> of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an
+              <b>unknown printer</b> took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five
+              centuries, but also the leap into <b>electronic</b> typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets containing Lorem Ipsum
+              passages, and more recently with desktop publishing software like
+              Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+
+        <div id="appTwo" class="project-container flex-container">
+          <h3>Calendarium</h3>
+          <div class="project-body project-body-reverse flex-container">
+            <p>
+              Discover Lincoln is a website designed to attract tourism to the
+              town of Lincoln. This site was built using
+              <b>HTML</b>, <b>CSS</b>, <b>NodeJS</b>, and <b>ReactJS</b>.
+              Designed to be quickly and efficiently maintained using a
+              <b>Content Management System</b>, the site uses an <b>API</b>
+              to load new and updated content.
+            </p>
+            <img
+              src="images/discover-lincoln.png"
+              alt="discover lincoln home page"
+            />
+          </div>
+          <div class="project-body flex-container">
+            <img
+              src="images/discover-lincoln-2.png"
+              alt="discover lincoln map page"
+            />
+            <p>
+              With a <b>responsive</b> and intuitive design, the site places
+              emphasis on being <b>user friendly</b> and accessible by following
+              <b>W3C accessibility guidelines</b>. This site includes an
+              interactive map page built using <b>Mapbox</b>. Providing the user
+              with a <b>search</b> and <b>filter</b> function to create an
+              effortless user experience.
+            </p>
+          </div>
+        </div>
+
+        <div id="appThree" class="project-container flex-container">
+          <h3>Catering Management Solution</h3>
+          <div class="project-body flex-container">
+            <img
+              src="images/emmas-small-engines.png"
+              alt="emma's small engines home page"
+            />
+            <p>
+              Emma's small engines was a <b>collaborative</b> school project
+              build to be employee facing and used to streamline customer orders
+              and repairs. Created with <b>HTML</b>, <b>CSS</b>, and
+              <b>JavaScript</b>. Made using <b>agile methodology</b>, this
+              project was completed in <b>three sprints</b>. Throughout these
+              sprints, my role was to <b>lead communications</b> and
+              <b>coordinated team members</b>. Additionally I coded whole pages,
+              custom dropdowns, and context help using the mentioned programming
+              languages to ensure <b>W3C guidelines</b> were followed.
+            </p>
+          </div>
+          <div class="project-body project-body-reverse flex-container">
+            <p>
+              The site contains pages for <b>maintaining a database</b> and
+              <b>generating reports</b>. There is also a <b>help feature</b> to
+              enhance user experience and simplfy onboarding for new employees.
+              The site also implements <b>user roles</b> by restricting access
+              to non-admin users, and allowing full access to users with
+              authorization.
+            </p>
+            <img
+              src="images/emmas-small-engines2.png"
+              alt="emma's small engines repairs tracking page"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+
+    <!--scripts-->
+    <script src="scripts/navbar.js"></script>
+  </body>
+</html>

@@ -135,6 +135,14 @@ button:hover {
   font-size: 2.25rem;
 }
 
+.hide {
+  display: none !important;
+}
+
+.show-flex {
+  display: flex !important;
+}
+
 /* flex container */
 .flex-container {
   display: flex;
@@ -200,7 +208,7 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 768px) {
   .open-nav {
     align-items: center;
     background-color: var(--black);
@@ -216,7 +224,7 @@ button:hover {
     left: calc(100% - 46px);
     width: 40px;
   }
-
+  
   .nav-container {
     display: none;
     height: auto;
@@ -242,10 +250,18 @@ button:hover {
     flex-direction: column;
   }
   .nav-container ul li a {
+    border-bottom: 2px solid var(--white);
     font-size: 1.75rem;
   }
 
   .nav-container ul li a:hover {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .nav-container ul li a {
+    border-bottom: none;
+    font-size: 1.75rem;
   }
 }
