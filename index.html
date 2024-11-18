@@ -8,59 +8,81 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/globals.css" />
+
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/9538a7980f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="bg">
-    <!--main-->
-    <main class="flex-container homepage-container">
-      <!--projects-->
-      <div href="#" class="projects-bento-block bento-block">
-         <h1>Nadav Hilu - Web Developer</h1>
-        <p><i>"Growth is achieved through conquering challenges"</i><br />Personal/professional growth occurs when facing difficulties and pushing boundaries</p>
-      </div>
-      <!--C#-->
-      <div class="csharp-bento-block bento-block flex-container">
-        <a
-          href="app-projects.html"
-          class="applications-bento-block bento-block"
-        >
-          <h2>Applications</h2>
-        </a>
-        <a href="app-projects.html#appOne" class="net-bento-block bento-block"
-          ><h3>.NET</h3>
-        </a>
-        <a href="app-projects.html#appTwo" class="uwp-bento-block bento-block"
-          ><h3>MAUI</h3>
-        </a>
-        <a href="app-projects.html#appThree" class="mvc-bento-block bento-block"
-          ><h3>MVC</h3>
-        </a>
-      </div>
+    <div class="wrapper">
+      <!--main-->
+      <main class="flex-container homepage-container">
+        <!--projects-->
+        <div href="#" class="projects-bento-block bento-block">
+          <h1>Nadav Hilu - Web Developer</h1>
+          <p>
+            <i>"Growth is achieved through conquering challenges"</i
+            ><br />Personal/professional growth occurs when facing difficulties
+            and pushing boundaries
+          </p>
+        </div>
+        <!--C#-->
+        <div class="csharp-bento-block bento-block flex-container">
+          <a
+            href="app-projects.html"
+            class="applications-bento-block bento-block"
+          >
+            <h2>Applications</h2>
+          </a>
+          <a href="app-projects.html#appOne" class="net-bento-block bento-block"
+            ><h3>.NET</h3>
+          </a>
+          <a href="app-projects.html#appTwo" class="uwp-bento-block bento-block"
+            ><h3>MAUI</h3>
+          </a>
+          <a
+            href="app-projects.html#appThree"
+            class="mvc-bento-block bento-block"
+            ><h3>MVC</h3>
+          </a>
+        </div>
 
-      <div class="web-dev-bento-block bento-block">
-        <!--Websites-->
-        <a href="web-projects.html" class="websites-bento-block bento-block"
-          ><h2>Websites</h2>
-        </a>
-        <!--Databases-->
-        <a href="#" class="databases-bento-block bento-block"
-          ><h2>Big Data</h2>
-        </a>
-      </div>
+        <div class="web-dev-bento-block bento-block">
+          <!--Websites-->
+          <a href="web-projects.html" class="websites-bento-block bento-block"
+            ><h2>Websites</h2>
+          </a>
+          <!--Databases-->
+          <a href="#" class="databases-bento-block bento-block"
+            ><h2>Big Data</h2>
+          </a>
+        </div>
 
-      <!--About Me-->
-      <a href="#" class="about-bento-block bento-block flex-container">
-        <!-- <div class="about-name flex-container">
+        <!--About Me-->
+        <a href="#" class="about-bento-block bento-block flex-container">
+          <!-- <div class="about-name flex-container">
           <h3 style="font-size: 24px">Nadav Hilu</h3>
         </div> -->
-        <div class="about-me flex-container">
-          <h1>About Me</h1>
-        </div>
-        <!-- <div class="about-title flex-container">
+          <div class="about-me flex-container">
+            <h1>About Me</h1>
+          </div>
+          <!-- <div class="about-title flex-container">
           <h3 style="font-size: 24px">Web Developer</h3>
         </div> -->
-      </a>
-    </main>
+        </a>
+      </main>
 
-    <!--footer-->
+      <!--footer-->
+      <footer id="footer" class="footer">
+        <i class="fa-brands fa-github"></i>
+        <img src="images/logo.svg" alt="Nadav Hilu Logo" />
+        <i class="fa-brands fa-linkedin"></i>
+      </footer>
+    </div>
+    
+    <!--scripts-->
+    <script src="scripts/align-footer.js"></script>
   </body>
 </html>

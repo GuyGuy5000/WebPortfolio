@@ -143,11 +143,55 @@ button:hover {
   display: flex !important;
 }
 
+/*Footer*/
+.footer {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: auto;
+  min-height: 100px;
+  max-height: 100px;
+  padding: 0 24px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer i {
+  color: var(--white);
+  font-size: 36px;
+}
+
+.footer img {
+  height: 100px;
+}
+
 /* flex container */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+/* image expansion */
+.expand {
+  cursor: zoom-in;
+  transition: 0s all !important;
+}
+
+.expanded {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0px !important;
+  cursor: zoom-out !important;
+  height: 100vh !important;
+  position: fixed;
+  object-fit: contain !important;
+  bottom: 0;
+  left: 0;
+  width: 100vw !important;
+  z-index: 10000;
 }
 
 /* index bento block */
@@ -224,7 +268,7 @@ button:hover {
     left: calc(100% - 46px);
     width: 40px;
   }
-  
+
   .nav-container {
     display: none;
     height: auto;
