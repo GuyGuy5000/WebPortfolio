@@ -15,7 +15,7 @@ if (window.innerHeight < maxHeight) {
   html.style.marginBottom = "0px";
 } else {
   footer.style.position = "fixed";
-  html.style.marginBottom = "100px";
+  html.style.marginBottom = "150px";
 }
 
 addEventListener("resize", (e) => {
@@ -32,6 +32,6 @@ addEventListener("resize", (e) => {
     html.style.marginBottom = "0px";
   } else {
     footer.style.position = "fixed";
-    html.style.marginBottom = "100px";
+    html.style.marginBottom = "150px";
   }
 });

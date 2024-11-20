@@ -20,7 +20,7 @@
       <!--main-->
       <main class="flex-container homepage-container">
         <!--projects-->
-        <div href="#" class="projects-bento-block bento-block">
+        <div class="projects-bento-block bento-block">
           <h1>Nadav Hilu - Web Developer</h1>
           <p>
             <i>"Growth is achieved through conquering challenges"</i
@@ -37,7 +37,7 @@
             <h2>Applications</h2>
           </a>
           <a href="app-projects.html#appOne" class="net-bento-block bento-block"
-            ><h3>.NET</h3>
+            ><h3>UWP</h3>
           </a>
           <a href="app-projects.html#appTwo" class="uwp-bento-block bento-block"
             ><h3>MAUI</h3>
@@ -76,12 +76,51 @@
 
       <!--footer-->
       <footer id="footer" class="footer">
-        <i class="fa-brands fa-github"></i>
+        <div class="flex-container" style="flex-direction: column">
+          <a href="#" class="flex-container link-container">
+            <i class="fa-brands fa-github"></i>
+            <div class="hide-text">
+              <div class="mobile-show">GitHub</div>
+              <div class="mobile-hide">My GitHub</div>
+            </div>
+          </a>
+          <a href="#" class="flex-container link-container">
+            <i class="fa-regular fa-file-pdf"></i>
+            <div class="hide-text">Resume</div>
+          </a>
+          <a
+            href="&#109;a&#105;&#108;to&#58;nadavhi&#108;%751%3&#50;&#64;g%6D%61i&#108;&#46;&#99;om"
+            class="flex-container link-container"
+          >
+            <i class="fa-solid fa-at"></i>
+            <div class="hide-text">
+              <div class="mobile-hide">
+                n&#97;da&#118;hilu&#49;&#50;&#64;gm&#97;il&#46;co&#109;
+              </div>
+              <div class="mobile-show">email me</div>
+            </div>
+          </a>
+          <a href="tel:9053805858" class="flex-container link-container">
+            <i class="fa-solid fa-phone"></i>
+            <div class="hide-text">(905)-380-5858</div>
+          </a>
+        </div>
+
         <img src="images/logo.svg" alt="Nadav Hilu Logo" />
-        <i class="fa-brands fa-linkedin"></i>
+
+        <div class="flex-container" style="flex-direction: column">
+          <a href="#" class="flex-container link-container right"> Websites </a>
+          <a href="#" class="flex-container link-container right">
+            Applications
+          </a>
+          <a href="#" class="flex-container link-container right">
+            Databases
+          </a>
+          <a href="#" class="flex-container link-container right"> About Me </a>
+        </div>
       </footer>
     </div>
-    
+
     <!--scripts-->
     <script src="scripts/align-footer.js"></script>
   </body>
