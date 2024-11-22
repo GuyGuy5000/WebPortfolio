@@ -21,7 +21,7 @@
       <main class="flex-container homepage-container">
         <!--projects-->
         <div class="projects-bento-block bento-block">
-          <h1>Nadav Hilu - Web Developer</h1>
+          <h1 class="name">Nadav Hilu - Web Developer</h1>
           <p>
             <i>"Growth is achieved through conquering challenges"</i
             ><br />Personal/professional growth occurs when facing difficulties
@@ -29,25 +29,29 @@
           </p>
         </div>
         <!--C#-->
-        <div class="csharp-bento-block bento-block flex-container">
-          <a
-            href="app-projects.html"
-            class="applications-bento-block bento-block"
-          >
+        <a
+          href="app-projects.html"
+          class="csharp-bento-block bento-block flex-container"
+        >
+          <div class="applications-bento-block bento-block">
             <h2>Applications</h2>
-          </a>
-          <a href="app-projects.html#appOne" class="net-bento-block bento-block"
-            ><h3>UWP</h3>
-          </a>
-          <a href="app-projects.html#appTwo" class="uwp-bento-block bento-block"
-            ><h3>MAUI</h3>
-          </a>
-          <a
-            href="app-projects.html#appThree"
+          </div>
+          <div
+            class="net-bento-block bento-block"
+          >
+            <h3>UWP</h3>
+          </div>
+          <div
+            class="uwp-bento-block bento-block"
+          >
+            <h3>MAUI</h3>
+          </div>
+          <div
             class="mvc-bento-block bento-block"
-            ><h3>MVC</h3>
-          </a>
-        </div>
+          >
+            <h3>MVC</h3>
+          </div>
+        </a>
 
         <div class="web-dev-bento-block bento-block">
           <!--Websites-->
@@ -55,29 +59,23 @@
             ><h2>Websites</h2>
           </a>
           <!--Databases-->
-          <a href="#" class="databases-bento-block bento-block"
+          <a href="database-projects.html" class="databases-bento-block bento-block"
             ><h2>Big Data</h2>
           </a>
         </div>
 
         <!--About Me-->
         <a href="#" class="about-bento-block bento-block flex-container">
-          <!-- <div class="about-name flex-container">
-          <h3 style="font-size: 24px">Nadav Hilu</h3>
-        </div> -->
           <div class="about-me flex-container">
-            <h1>About Me</h1>
+            <h2>About Me</h2>
           </div>
-          <!-- <div class="about-title flex-container">
-          <h3 style="font-size: 24px">Web Developer</h3>
-        </div> -->
         </a>
       </main>
 
       <!--footer-->
       <footer id="footer" class="footer">
         <div class="flex-container" style="flex-direction: column">
-          <a href="#" class="flex-container link-container">
+          <a href="https://github.com/GuyGuy5000" class="flex-container link-container">
             <i class="fa-brands fa-github"></i>
             <div class="hide-text">
               <div class="mobile-show">GitHub</div>
@@ -109,11 +107,22 @@
         <img src="images/logo.svg" alt="Nadav Hilu Logo" />
 
         <div class="flex-container" style="flex-direction: column">
-          <a href="#" class="flex-container link-container right"> Websites </a>
-          <a href="#" class="flex-container link-container right">
+          <a
+            href="web-projects.html"
+            class="flex-container link-container right"
+          >
+            Websites
+          </a>
+          <a
+            href="app-projects.html"
+            class="flex-container link-container right"
+          >
             Applications
           </a>
-          <a href="#" class="flex-container link-container right">
+          <a
+            href="database-projects.html"
+            class="flex-container link-container right"
+          >
             Databases
           </a>
           <a href="#" class="flex-container link-container right"> About Me </a>

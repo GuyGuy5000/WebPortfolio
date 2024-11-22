@@ -25,7 +25,9 @@
       ></i>
       <ul class="flex-container">
         <li><a href="index.html">Home Page</a></li>
-        <li><a href="web-projects.html">My Projects</a></li>
+        <li><a href="web-projects.html">Websites</a></li>
+        <li><a href="app-projects.html">Applications</a></li>
+        <li><a href="database-projects.html">Databases</a></li>
         <li><a>About Me</a></li>
       </ul>
     </div>
@@ -34,6 +36,7 @@
       class="fa-solid fa-bars open-nav flex-container"
       style="color: white"
     ></i>
+
     <!--main-->
     <main class="projects-container">
       <section class="section-container">
@@ -44,7 +47,7 @@
               Projects designed as stand-alone apps or software based on .NET
               frameworks. These projects utilize cloud services such as
               Microsoft Azure to develop layered architecture and create
-              scalable database solutions
+              scalable database solutions.
             </p>
           </div>
 
@@ -59,12 +62,12 @@
               <li>
                 <a href="#appTwo"
                   ><h2>Calendarium</h2>
-                  <p>.NET Maui/ASP.NET Core Web API</p></a
+                  <p>.NET Maui/ASP.NET Core Web API (MVVM)</p></a
                 >
               </li>
               <li>
                 <a href="#appThree"
-                  ><h2>UWP Game</h2>
+                  ><h2>Arkanoid in UWP</h2>
                   <p>.NET UWP (C#)</p></a
                 >
               </li>
@@ -74,94 +77,182 @@
 
         <div id="appOne" class="project-container flex-container">
           <h3>Welland Minor Baseball League</h3>
+          <div class="flex-container" style="align-self: flex-start">
+            <img
+              src="images/mvc-logo.png"
+              alt="ASP.NET MVC logo"
+              class="logo-img"
+            />
+            <img
+              src="images/razor-logo.png"
+              alt="Razor Pages logo"
+              class="logo-img"
+            />
+            <img
+              src="images/javascript-logo.png"
+              alt="JavaScript logo"
+              class="logo-img"
+            />
+            <img src="images/css-logo.png" alt="CSS logo" class="logo-img" />
+          </div>
           <div class="project-body flex-container">
-            <img src="images/blobs-background-1.svg" />
+            <img
+              src="images/wmba.png"
+              alt="WMBA home page, logged in as admin"
+              class="expand"
+            />
             <p>
-              Lorem Ipsum is simply <b>dummy text</b> of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an
-              <b>unknown printer</b> took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five
-              centuries, but also the leap into <b>electronic</b> typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s
-              with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem Ipsum.
+              WMBA is a <b>collaborative</b> project commisioned by the Welland
+              Minor Baseball League to manage and track baseball teams and
+              games. Coded as a <b>.NET Web App</b>, this project utilized
+              <b>agile methodology</b> and was separated into three sprints. It
+              uses and <b>SQLite</b> database and <b>ASP.NET Identity</b> to
+              authenticate user roles.
             </p>
+          </div>
+          <div class="project-body project-body-reverse flex-container">
+            <p>
+              My role was <b>communications lead</b> and <b>lead developer</b>.
+              This included responsibilities such as managing incoming code
+              using <b>GitHub</b> and <b>documenting</b> all aspects of the
+              projects. Along with managing the project, I created
+              <b>data models</b> and programed entire <b>controllers</b> and
+              their responding <b>views</b>.
+            </p>
+            <img
+              src="images/wmba-2.png"
+              alt="WMBA score keeping page"
+              class="expand"
+              style="width: 200px"
+            />
           </div>
         </div>
 
         <div id="appTwo" class="project-container flex-container">
           <h3>Calendarium</h3>
-          <div class="project-body project-body-reverse flex-container">
-            <p>
-              Discover Lincoln is a website designed to attract tourism to the
-              town of Lincoln. This site was built using
-              <b>HTML</b>, <b>CSS</b>, <b>NodeJS</b>, and <b>ReactJS</b>.
-              Designed to be quickly and efficiently maintained using a
-              <b>Content Management System</b>, the site uses an <b>API</b>
-              to load new and updated content.
-            </p>
+          <div class="flex-container" style="align-self: flex-start">
             <img
-              src="images/discover-lincoln.png"
-              alt="discover lincoln home page"
+              src="images/maui-logo.png"
+              alt="ASP.NET MAUI logo"
+              class="logo-img"
+            />
+            <img
+              src="images/xaml-logo.png"
+              alt="ASP.NET Core logo"
+              class="logo-img"
+            />
+            <img
+              src="images/mvvm-logo.png"
+              alt="ASP.NET MVVM logo"
+              class="logo-img"
             />
           </div>
-          <div class="project-body flex-container">
-            <img
-              src="images/discover-lincoln-2.png"
-              alt="discover lincoln map page"
-            />
+          <div class="project-body project-body-reverse flex-container">
             <p>
-              With a <b>responsive</b> and intuitive design, the site places
-              emphasis on being <b>user friendly</b> and accessible by following
-              <b>W3C accessibility guidelines</b>. This site includes an
-              interactive map page built using <b>Mapbox</b>. Providing the user
-              with a <b>search</b> and <b>filter</b> function to create an
-              effortless user experience.
+              Calendarium is a cross-platform calendar tracking application
+              designed for organizing and scheduling different facets of life.
+              This app was created in <b>.NET MAUI</b> and uses <b>XAML</b> for
+              UI design. The backend integrates a custom built
+              <b>ASP.NET Core Web API</b> using
+              <b>MVVM (Model-View-ViewModel)</b> design patterns to ensure
+              separation of logic and UI.
             </p>
+            <img
+              src="images/calendarium-2.png"
+              alt="Calendarium events page showing all events in a calendar"
+              class="expand"
+            />
           </div>
         </div>
 
         <div id="appThree" class="project-container flex-container">
-          <h3>Calendarium</h3>
+          <h3>Arkanoid in UWP</h3>
+          <div class="flex-container" style="align-self: flex-start">
+            <img
+              src="images/net-core-logo.png"
+              alt=".NET Core logo"
+              class="logo-img"
+            />
+            <img
+              src="images/xaml-logo.png"
+              alt="ASP.NET Core logo"
+              class="logo-img"
+            />
+          </div>
           <div class="project-body flex-container">
             <img
-              src="images/emmas-small-engines.png"
-              alt="emma's small engines home page"
+              src="images/arkanoid.png"
+              alt="Arkanoid game screen"
+              class="expand"
             />
             <p>
-              Emma's small engines was a <b>collaborative</b> school project
-              build to be employee facing and used to streamline customer orders
-              and repairs. Created with <b>HTML</b>, <b>CSS</b>, and
-              <b>JavaScript</b>. Made using <b>agile methodology</b>, this
-              project was completed in <b>three sprints</b>. Throughout these
-              sprints, my role was to <b>lead communications</b> and
-              <b>coordinated team members</b>. Additionally I coded whole pages,
-              custom dropdowns, and context help using the mentioned programming
-              languages to ensure <b>W3C guidelines</b> were followed.
+              The goal of this school project was to recreate Arkanoid to gain a
+              better understanding of software design process such as
+              <b>documentation</b>, <b>class diagrams</b>, and
+              <b>refactoring code</b>.
             </p>
-          </div>
-          <div class="project-body project-body-reverse flex-container">
-            <p>
-              The site contains pages for <b>maintaining a database</b> and
-              <b>generating reports</b>. There is also a <b>help feature</b> to
-              enhance user experience and simplfy onboarding for new employees.
-              The site also implements <b>user roles</b> by restricting access
-              to non-admin users, and allowing full access to users with
-              authorization.
-            </p>
-            <img
-              src="images/emmas-small-engines2.png"
-              alt="emma's small engines repairs tracking page"
-            />
           </div>
         </div>
       </section>
     </main>
+
     <!--footer-->
+    <footer id="footer" class="footer">
+      <div class="flex-container" style="flex-direction: column">
+        <a
+          href="https://github.com/GuyGuy5000"
+          class="flex-container link-container"
+        >
+          <i class="fa-brands fa-github"></i>
+          <div class="hide-text">
+            <div class="mobile-show">GitHub</div>
+            <div class="mobile-hide">My GitHub</div>
+          </div>
+        </a>
+        <a href="#" class="flex-container link-container">
+          <i class="fa-regular fa-file-pdf"></i>
+          <div class="hide-text">Resume</div>
+        </a>
+        <a
+          href="&#109;a&#105;&#108;to&#58;nadavhi&#108;%751%3&#50;&#64;g%6D%61i&#108;&#46;&#99;om"
+          class="flex-container link-container"
+        >
+          <i class="fa-solid fa-at"></i>
+          <div class="hide-text">
+            <div class="mobile-hide">
+              n&#97;da&#118;hilu&#49;&#50;&#64;gm&#97;il&#46;co&#109;
+            </div>
+            <div class="mobile-show">email me</div>
+          </div>
+        </a>
+        <a href="tel:9053805858" class="flex-container link-container">
+          <i class="fa-solid fa-phone"></i>
+          <div class="hide-text">(905)-380-5858</div>
+        </a>
+      </div>
+
+      <img src="images/logo.svg" alt="Nadav Hilu Logo" />
+
+      <div class="flex-container" style="flex-direction: column">
+        <a href="web-projects.html" class="flex-container link-container right">
+          Websites
+        </a>
+        <a href="app-projects.html" class="flex-container link-container right">
+          Applications
+        </a>
+        <a
+          href="database-projects.html"
+          class="flex-container link-container right"
+        >
+          Databases
+        </a>
+        <a href="#" class="flex-container link-container right"> About Me </a>
+      </div>
+    </footer>
 
     <!--scripts-->
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/max-img.js"></script>
+    <script src="scripts/align-footer.js"></script>
   </body>
 </html>

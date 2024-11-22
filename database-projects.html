@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nadav Hilu - App Projects Page</title>
+    <title>Nadav Hilu - Database Projects Page</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="css/projects.css" />
@@ -25,9 +25,9 @@
       ></i>
       <ul class="flex-container">
         <li><a href="index.html">Home Page</a></li>
-        <li><a href="index.html">Websites</a></li>
-        <li><a href="index.html">Applications</a></li>
-        <li><a href="index.html">Databases</a></li>
+        <li><a href="web-projects.html">Websites</a></li>
+        <li><a href="app-projects.html">Applications</a></li>
+        <li><a href="database-projects.html">Databases</a></li>
         <li><a>About Me</a></li>
       </ul>
     </div>
@@ -36,17 +36,16 @@
       class="fa-solid fa-bars open-nav flex-container"
       style="color: white"
     ></i>
+
     <!--main-->
     <main class="projects-container">
       <section class="section-container">
         <div class="section-top-container">
           <div class="section-header flex-container">
-            <h1>Applications and Software</h1>
+            <h1>Databases and Data Analytics</h1>
             <p>
-              Projects designed as stand-alone apps or software based on .NET
-              frameworks. These projects utilize cloud services such as
-              Microsoft Azure to develop layered architecture and create
-              scalable database solutions
+              Projects using relational databases to capture and
+              manipulate large amounts of data.
             </p>
           </div>
 
@@ -54,23 +53,22 @@
             <ol>
               <li>
                 <a href="#appOne"
-                  ><h2>Contoso Report</h2>
-                  <p>Power BI</p></a
+                  ><h2>Contosto reporting dashboard</h2>
+                  <p>Power BI, SQL</p></a
                 >
               </li>
               <li>
                 <a href="#appTwo"
-                  ><h2>Catering Management Solution</h2>
-                  <p>ASP.NET Core Web app (MVC)</p></a
+                  ><h2>Catering Management Solutions</h2>
+                  <p>ASP.NET Core Web App, SQL</p></a
                 >
               </li>
-              <li></li>
             </ol>
           </div>
         </div>
 
         <div id="appOne" class="project-container flex-container">
-          <h3>Welland Minor Baseball League</h3>
+          <h3>Contosto reporting dashboard</h3>
           <div class="project-body flex-container">
             <img src="images/blobs-background-1.svg" />
             <p>
@@ -119,46 +117,66 @@
             </p>
           </div>
         </div>
-
-        <div id="appThree" class="project-container flex-container">
-          <h3>Catering Management Solution</h3>
-          <div class="project-body flex-container">
-            <img
-              src="images/emmas-small-engines.png"
-              alt="emma's small engines home page"
-            />
-            <p>
-              Emma's small engines was a <b>collaborative</b> school project
-              build to be employee facing and used to streamline customer orders
-              and repairs. Created with <b>HTML</b>, <b>CSS</b>, and
-              <b>JavaScript</b>. Made using <b>agile methodology</b>, this
-              project was completed in <b>three sprints</b>. Throughout these
-              sprints, my role was to <b>lead communications</b> and
-              <b>coordinated team members</b>. Additionally I coded whole pages,
-              custom dropdowns, and context help using the mentioned programming
-              languages to ensure <b>W3C guidelines</b> were followed.
-            </p>
-          </div>
-          <div class="project-body project-body-reverse flex-container">
-            <p>
-              The site contains pages for <b>maintaining a database</b> and
-              <b>generating reports</b>. There is also a <b>help feature</b> to
-              enhance user experience and simplfy onboarding for new employees.
-              The site also implements <b>user roles</b> by restricting access
-              to non-admin users, and allowing full access to users with
-              authorization.
-            </p>
-            <img
-              src="images/emmas-small-engines2.png"
-              alt="emma's small engines repairs tracking page"
-            />
-          </div>
-        </div>
       </section>
     </main>
+
     <!--footer-->
+    <footer id="footer" class="footer">
+      <div class="flex-container" style="flex-direction: column">
+        <a
+          href="https://github.com/GuyGuy5000"
+          class="flex-container link-container"
+        >
+          <i class="fa-brands fa-github"></i>
+          <div class="hide-text">
+            <div class="mobile-show">GitHub</div>
+            <div class="mobile-hide">My GitHub</div>
+          </div>
+        </a>
+        <a href="#" class="flex-container link-container">
+          <i class="fa-regular fa-file-pdf"></i>
+          <div class="hide-text">Resume</div>
+        </a>
+        <a
+          href="&#109;a&#105;&#108;to&#58;nadavhi&#108;%751%3&#50;&#64;g%6D%61i&#108;&#46;&#99;om"
+          class="flex-container link-container"
+        >
+          <i class="fa-solid fa-at"></i>
+          <div class="hide-text">
+            <div class="mobile-hide">
+              n&#97;da&#118;hilu&#49;&#50;&#64;gm&#97;il&#46;co&#109;
+            </div>
+            <div class="mobile-show">email me</div>
+          </div>
+        </a>
+        <a href="tel:9053805858" class="flex-container link-container">
+          <i class="fa-solid fa-phone"></i>
+          <div class="hide-text">(905)-380-5858</div>
+        </a>
+      </div>
+
+      <img src="images/logo.svg" alt="Nadav Hilu Logo" />
+
+      <div class="flex-container" style="flex-direction: column">
+        <a href="web-projects.html" class="flex-container link-container right">
+          Websites
+        </a>
+        <a href="app-projects.html" class="flex-container link-container right">
+          Applications
+        </a>
+        <a
+          href="database-projects.html"
+          class="flex-container link-container right"
+        >
+          Databases
+        </a>
+        <a href="#" class="flex-container link-container right"> About Me </a>
+      </div>
+    </footer>
 
     <!--scripts-->
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/max-img.js"></script>
+    <script src="scripts/align-footer.js"></script>
   </body>
 </html>
