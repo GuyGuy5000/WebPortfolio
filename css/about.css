@@ -1,0 +1,38 @@
+.about-container {
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px !important;
+}
+
+.about-section {
+  align-content: center;
+  flex-direction: column;
+  gap: 32px !important;
+  height: auto;
+  justify-content: center;
+  padding: 64px;
+  width: 50%;
+}
+
+.about-section h1 {
+    text-align: center;
+}
+
+.about-section .border-left {
+    border-left: 1px solid var(--black);
+    padding-left: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-section {
+    border: none;
+    height: auto;
+    padding: 24pxpx;
+    width: 100%;
+  }
+}
