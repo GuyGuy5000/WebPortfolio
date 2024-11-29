@@ -3,6 +3,13 @@
   flex-direction: row;
   justify-content: center;
   gap: 0px !important;
+  padding-bottom: 16px;
+}
+
+.about-section .drawing {
+  height: 270px;
+  object-fit: cover;
+  width: auto;
 }
 
 .about-section {
@@ -11,17 +18,35 @@
   gap: 32px !important;
   height: auto;
   justify-content: center;
-  padding: 64px;
   width: 50%;
 }
 
 .about-section h1 {
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .about-section .border-left {
-    border-left: 1px solid var(--black);
-    padding-left: 8px;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 16px;
+  padding: 8px;
+  width: 90%;
+}
+
+.about-section .border-left h2 {
+  color: var(--black);
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.about-section .border-left h2 i {
+  padding-right: 16px;
+}
+
+.about-container .border-left p,
+.about-container .border-left h5 {
+  color: var(--black);
 }
 
 @media only screen and (max-width: 768px) {
@@ -30,9 +55,27 @@
   }
 
   .about-section {
-    border: none;
-    height: auto;
-    padding: 24pxpx;
+    gap: 16px !important;
+    padding: 8px 64px;
     width: 100%;
+  }
+
+  .about-section .border-left {
+    height: auto;
+    padding: 24px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .about-section {
+    padding: 8px 16px;
+  }
+
+  .about-container .border-left {
+    padding: 8px;
+  }
+  .about-container .border-left h2 {
+    font-size: 1.5rem;
   }
 }

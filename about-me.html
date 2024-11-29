@@ -40,18 +40,19 @@
     <!--main-->
     <main class="about-container flex-container">
       <div class="about-section flex-container">
-        <div>
+        <div class="flex-container" style="justify-content: center">
           <img
             src="images/mans-wireframe.png"
             alt="a cartoonish drawing of me"
+            class="drawing"
           />
         </div>
         <h1>Nadav Hilu</h1>
-      </div>
-      <div class="about-section flex-container">
         <div class="border-left">
-          <h1 style="text-align: left">Bio</h1>
-          <p>
+          <h2 style="text-align: left" class="toggle" data-tab="bio">
+            <i id="bioarrow" class="fa-solid fa-chevron-right"></i> Bio
+          </h2>
+          <p id="bio" class="hide">
             I am a web developer experienced in creating websites and web
             applications using several programming languages such as NodeJS,
             ReactJS, ASP.NET, and MVC design patterns. I am a student at Niagara
@@ -62,26 +63,63 @@
             environment.
           </p>
         </div>
+      </div>
+      <div class="about-section flex-container">
+        <div class="border-left">
+          <h2
+            style="text-align: left"
+            class="toggle"
+            data-tab="missionStatement"
+          >
+            <i id="missionStatementarrow" class="fa-solid fa-chevron-down"></i>
+            Mission Statement
+          </h2>
+          <div id="missionStatement">
+            <h5>Kindness is infectious</h5>
+            <p>
+              A positive and supportive employee sets a precedent to their
+              co-workers, which creates a nurturing and productive workplace.
+            </p>
+            <br />
+            <h5>Growth is achieved through conquering challenges</h5>
+            <p>
+              Personal and professional growth occurs when facing difficulties
+              and pushing boundaries. productive workplace.
+            </p>
+            <br />
+            <h5>Valuing every voice creates stronger solutions</h5>
+            <p>
+              Allowing everyone to speak their mind and contribute creates a
+              stronger team and thus a better outcome.
+            </p>
+          </div>
+        </div>
 
         <div class="border-left">
-          <h1 style="text-align: left">Mission Statement</h1>
-          <h5>Kindness is infectious</h5>
-          <p>
-            A positive and supportive employee sets a precedent to their
-            co-workers, which creates a nurturing and productive workplace.
-          </p>
-          <br />
-          <h5>Growth is achieved through conquering challenges</h5>
-          <p>
-            Personal and professional growth occurs when facing difficulties and
-            pushing boundaries. productive workplace.
-          </p>
-          <br />
-          <h5>Valuing every voice creates stronger solutions</h5>
-          <p>
-            Allowing everyone to speak their mind and contribute creates a
-            stronger team and thus a better outcome.
-          </p>
+          <h2 style="text-align: left" class="toggle" data-tab="hobbies">
+            <i id="hobbiesarrow" class="fa-solid fa-chevron-right"></i>
+            Personal Hobbies
+          </h2>
+          <div id="hobbies" class="hide">
+            <h5>Video Games</h5>
+            <p>
+              I enjoy playing a variety of video games that challenge me. My
+              favourite genres are rogue-likes and puzzle games.
+            </p>
+            <br />
+            <h5>Music</h5>
+            <p>
+              Playing the piano allows me to express myself creatively, develop
+              focus and discipline, and enjoy the process of improving my skills
+              with each practice.
+            </p>
+            <br />
+            <h5>Cooking</h5>
+            <p>
+              I enjoy trying out new recipes and improving on them, learning
+              different techniques to make meals that taste great.
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -145,5 +183,6 @@
     <!--scripts-->
     <script src="scripts/navbar.js"></script>
     <script src="scripts/align-footer.js"></script>
+    <script src="scripts/accordian-tab.js"></script>
   </body>
 </html>
