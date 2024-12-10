@@ -284,6 +284,10 @@ button:hover {
   .footer .link-container {
     width: 270px;
   }
+
+  .footer i {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
