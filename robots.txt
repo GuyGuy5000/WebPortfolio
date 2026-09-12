@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guyguy5000.github.io/WebPortfolio/sitemap.xml
